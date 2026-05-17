@@ -1,4 +1,4 @@
-<img width="2488" height="1552" alt="image" src="https://github.com/user-attachments/assets/7be1043a-8017-4030-95e6-df7a3dcad63c" /># 南沙产业知识图谱
+# 南沙产业知识图谱
 
 一个面向黑客松场景的 LLM 产业 Wiki 原型项目。项目聚焦南沙“8+2+3”现代化产业 Wiki，尝试把分散在政策文件、企业资料、园区项目和产业动态中的信息，组织成可搜索、可浏览、可对话的产业知识网络。
 
