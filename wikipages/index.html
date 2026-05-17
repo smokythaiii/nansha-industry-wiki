@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>南沙产业知识图谱</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar" aria-label="Main navigation">
+        <a class="brand" href="/" aria-label="南沙产业知识图谱 home">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </span>
+          <span>南沙产业知识图谱</span>
+        </a>
+
+        <nav class="icon-nav" aria-label="Utility navigation">
+          <button aria-label="Toggle theme">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.4 14.8A8.4 8.4 0 0 1 9.2 3.6 8.7 8.7 0 1 0 20.4 14.8Z" />
+            </svg>
+          </button>
+          <button aria-label="Help menu">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9.4 9a3 3 0 1 1 4.9 2.3c-1 .8-1.5 1.2-1.5 2.7" />
+              <path d="M12 17.6h.01" />
+              <circle cx="12" cy="12" r="9" />
+            </svg>
+          </button>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <h1 id="hero-title">南沙产业知识图谱</h1>
+            <p>
+              聚焦南沙“8+2+3”现代化产业 Wiki。<br />
+              构建由 LLM 驱动、持续更新、可检索、可对话的产业知识网络。
+            </p>
+
+            <form class="hero-search search-form" action="./search/" aria-label="搜索产业、企业、政策、项目或技术路线">
+              <input name="q" type="search" placeholder="搜索产业、企业、政策、项目或技术路线" />
+              <button type="submit" aria-label="Search">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m21 21-4.2-4.2m1.2-5.3a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z" />
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="visual-glow"></div>
+            <div class="floating-card card-book">
+              <svg viewBox="0 0 64 64">
+                <path d="M10 16c10-4 16 0 22 5v31c-6-5-12-9-22-5V16Z" />
+                <path d="M54 16c-10-4-16 0-22 5v31c6-5 12-9 22-5V16Z" />
+              </svg>
+            </div>
+            <div class="floating-card card-code">
+              <svg viewBox="0 0 64 64">
+                <path d="M18 22h28v20H18z" />
+                <path d="m28 27-6 5 6 5M36 27l6 5-6 5" />
+              </svg>
+            </div>
+            <div class="floating-card card-chat">
+              <svg viewBox="0 0 64 64">
+                <path d="M14 16h36v25H25l-11 8V16Z" />
+                <path d="M23 25h20M23 33h13" />
+              </svg>
+            </div>
+            <div class="floating-card card-screen">
+              <svg viewBox="0 0 64 64">
+                <path d="M14 18h36v25H14zM25 50h14M32 43v7" />
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="repositories" aria-labelledby="repos-title">
+          <h2 id="repos-title">重点产业 Wiki</h2>
+          <div class="repo-grid">
+            <a class="repo-card" href="#" aria-label="打开智能网联与新能源汽车产业 Wiki">
+              <span class="repo-logo google">车</span>
+              <h3>智能网联与新能源汽车</h3>
+              <p>整合整车制造、智能座舱、车路协同、充换电设施与供应链节点。</p>
+              <span class="stars">政策 128 条 · 关系 2.4k</span>
+            </a>
+            <a class="repo-card" href="#" aria-label="打开人工智能产业 Wiki">
+              <span class="repo-logo go">AI</span>
+              <h3>人工智能</h3>
+              <p>覆盖大模型应用、算力基础设施、智能制造、城市治理与产业服务场景。</p>
+              <span class="stars">企业 342 家 · 实体 8.1k</span>
+            </a>
+            <a class="repo-card" href="#" aria-label="打开半导体与集成电路产业 Wiki">
+              <span class="repo-logo flutter">芯</span>
+              <h3>半导体与集成电路</h3>
+              <p>追踪设计、封测、设备材料、EDA 工具与终端应用之间的产业链关系。</p>
+              <span class="stars">项目 56 个 · 来源 620 篇</span>
+            </a>
+            <a class="repo-card" href="#" aria-label="打开生物医药与健康产业 Wiki">
+              <span class="repo-logo kube">医</span>
+              <h3>生物医药与健康</h3>
+              <p>连接创新药、医疗器械、临床资源、平台机构与产业基金等关键节点。</p>
+              <span class="stars">企业 214 家 · 政策 92 条</span>
+            </a>
+            <a class="repo-card" href="./wiki/low-altitude-economy/" aria-label="打开低空经济产业 Wiki">
+              <span class="repo-logo react">低</span>
+              <h3>低空经济</h3>
+              <p>沉淀低空制造、飞行服务、空域管理、场景应用与监管政策图谱。</p>
+              <span class="stars">场景 38 个 · 关系 1.7k</span>
+            </a>
+            <a class="repo-card" href="#" aria-label="打开海洋经济产业 Wiki">
+              <span class="repo-logo sdk">海</span>
+              <h3>海洋经济</h3>
+              <p>围绕海工装备、海洋科技、港航物流、蓝色金融与湾区协同建立 Wiki。</p>
+              <span class="stars">企业 186 家 · 项目 43 个</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="private-repo" aria-labelledby="private-title">
+          <div class="private-copy">
+            <span class="eyebrow">Coming Soon</span>
+            <h2 id="private-title">接入你的产业数据</h2>
+            <p>
+              接入政策文件、企业名录、园区资料、招商项目和新闻动态，LLM 将自动抽取实体、
+              识别关系、生成产业 Wiki，并在数据变化时持续更新。
+            </p>
+            <a href="#" class="text-link">
+              申请接入数据源
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 17 17 7M9 7h8v8" />
+              </svg>
+            </a>
+          </div>
+          <div class="terminal-panel" aria-hidden="true">
+            <div class="terminal-bar"><span></span><span></span><span></span></div>
+            <pre><code>$ nansha-wiki ingest industry-data/
+Parsing policy_docs and enterprise profiles...
+Extracting entities: policy, company, park, project
+Building graph: industry -> technology -> enterprise
+Generating LLM Wiki pages with citations
+RAG index and graph sync complete</code></pre>
+          </div>
+        </section>
+
+        <section class="features" aria-labelledby="features-title">
+          <div class="section-heading">
+            <h2 id="features-title">读懂南沙产业体系</h2>
+            <p>产业知识不再停留在文件夹和表格里，而是被 LLM 编译成可导航、可追问、可验证的 Wiki。</p>
+          </div>
+          <div class="feature-grid">
+            <article>
+              <span class="feature-icon">▦</span>
+              <h3>自动编译产业 Wiki</h3>
+              <p>LLM 从政策、公告、研报、企业资料中生成结构化产业页面与专题词条。</p>
+            </article>
+            <article>
+              <span class="feature-icon">ϟ</span>
+              <h3>抽取实体与关系</h3>
+              <p>识别产业、企业、园区、项目、技术、资本等节点及其上下游关系。</p>
+            </article>
+            <article>
+              <span class="feature-icon">↺</span>
+              <h3>持续更新与版本追踪</h3>
+              <p>当政策、项目或企业动态变化时，相关 Wiki 页面和图谱关系自动更新。</p>
+            </article>
+            <article>
+              <span class="feature-icon">RAG</span>
+              <h3>来源可追溯</h3>
+              <p>每个结论都链接回原始政策、公告、新闻或数据源，降低 LLM 幻觉风险。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="chat-section" aria-labelledby="chat-title">
+          <div class="chat-copy">
+            <h2 id="chat-title">和南沙产业知识库对话</h2>
+            <p>
+              用自然语言询问产业链结构、政策适配、企业分布、技术路线和招商机会。
+              LLM 会基于产业 Wiki 与知识图谱生成回答，并附带可追溯来源。
+            </p>
+            <ul>
+              <li>RAG 检索增强生成</li>
+              <li>语义搜索与图谱推理</li>
+              <li>产业画像与政策匹配</li>
+            </ul>
+          </div>
+          <div class="chat-card" aria-label="南沙产业知识库问答示例">
+            <div class="chat-message user">南沙低空经济有哪些重点企业、政策支持和应用场景？</div>
+            <div class="chat-message assistant">
+              系统识别出 <strong>低空制造</strong>、<strong>飞行服务</strong>、
+              <strong>空域管理</strong> 和 <strong>场景应用</strong> 四类节点，并关联相关政策、
+              园区载体与项目动态。
+            </div>
+            <div class="chat-citations">
+              <span>政策文件</span>
+              <span>企业图谱</span>
+              <span>项目公告</span>
+              <span>园区资料</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="closing-cta" aria-labelledby="cta-title">
+          <h2 id="cta-title">为南沙产业决策补上知识维度</h2>
+          <a href="#" class="primary-link">
+            探索 LLM 产业 Wiki
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 17 17 7M9 7h8v8" />
+            </svg>
+          </a>
+        </section>
+      </main>
+
+      <footer>
+        <a class="brand" href="/" aria-label="南沙产业知识图谱 home">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </span>
+          <span>南沙产业知识图谱</span>
+        </a>
+        <nav aria-label="Footer">
+          <a href="#">FAQ</a>
+          <a href="mailto:codewiki-feedback@google.com">Feedback</a>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+        </nav>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

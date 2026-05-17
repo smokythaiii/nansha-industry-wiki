@@ -1,0 +1,100 @@
+{
+  "id": "low-altitude-economy",
+  "title": "低空经济",
+  "badge": "Powered by LLM Wiki",
+  "generatedAt": "May 17, 2026",
+  "graphVersion": "demo-graph",
+  "warning": "LLM can make mistakes, so double-check cited sources.",
+  "sourceUrl": "../../search/index.html?q=低空经济",
+  "graph": {
+    "label": "产业知识图谱",
+    "nodes": [
+      { "id": "root", "label": "低空经济", "className": "graph-root" },
+      { "id": "manufacturing", "label": "低空制造", "className": "graph-a" },
+      { "id": "service", "label": "飞行服务", "className": "graph-b" },
+      { "id": "airspace", "label": "空域管理", "className": "graph-c" },
+      { "id": "scenario", "label": "场景应用", "className": "graph-d" }
+    ],
+    "lines": ["line-a", "line-b", "line-c", "line-d"]
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "低空经济产业概览",
+      "type": "paragraphs",
+      "content": [
+        "低空经济是南沙面向未来产业组织方式的重要入口，连接低空制造、飞行服务、空域管理、城市治理、物流配送、文旅消费和应急救援等多类场景。产业 Wiki 将分散在政策文件、企业名录、项目公告和园区资料中的信息抽取为可导航的知识页面。",
+        "在 LLM Wiki 中，低空经济不只是一个文本词条，而是一组可追溯的产业关系。系统会识别产业链节点、政策条款、代表企业、应用场景和项目进展，并将它们链接到来源材料，支持语义搜索、RAG 问答和产业链推理。"
+      ]
+    },
+    {
+      "id": "chain",
+      "title": "产业链与关键节点",
+      "type": "table",
+      "headers": ["节点", "说明", "关联对象"],
+      "rows": [
+        {
+          "cells": ["低空制造", "面向无人机、eVTOL、核心零部件和载荷设备的制造能力。", ["整机企业", "零部件", "测试验证"]]
+        },
+        {
+          "cells": ["飞行服务", "包括低空物流、巡检、文旅观光、应急救援和城市服务运营。", ["运营商", "场景方", "航线资源"]]
+        },
+        {
+          "cells": ["空域管理", "支撑飞行计划、空域协同、监管平台、通信导航与安全保障。", ["监管平台", "数据系统", "安全规则"]]
+        },
+        {
+          "cells": ["场景应用", "把低空能力嵌入港口、园区、农业、交通、文旅和公共服务。", ["园区", "项目", "需求单位"]]
+        }
+      ],
+      "after": [
+        "LLM 会把上述节点和资料中的企业、政策、项目进行实体对齐，形成“产业方向 - 企业能力 - 应用场景 - 政策支持”的多跳关系，便于招商研判和产业服务。"
+      ]
+    },
+    {
+      "id": "policy",
+      "title": "政策支持与应用场景",
+      "type": "evidence",
+      "content": [
+        "对于低空经济，政策匹配的重点在于空域开放、试点示范、基础设施、飞行安全、数据监管和场景牵引。Wiki 会把政策条款拆解为机器可检索的结构化片段，并与企业画像和项目阶段进行语义匹配。"
+      ],
+      "evidence": ["政策文件", "企业图谱", "项目公告", "园区资料", "RAG 引用"]
+    },
+    {
+      "id": "companies",
+      "title": "代表企业与项目线索",
+      "type": "table",
+      "headers": ["对象", "类型", "Wiki 解释"],
+      "rows": [
+        {
+          "cells": ["低空物流示范项目", "项目", ["应用场景", "园区服务", "路线试点"]]
+        },
+        {
+          "cells": ["无人机运营服务商", "企业画像", ["飞行服务", "巡检", "应急"]]
+        },
+        {
+          "cells": ["空域协同平台", "技术平台", ["监管", "数据", "安全"]]
+        }
+      ]
+    },
+    {
+      "id": "llm",
+      "title": "LLM Wiki 生成机制",
+      "type": "code",
+      "codeLabel": "pipeline",
+      "code": "ingest(policy_docs, enterprise_profiles, project_news)\nextract_entities([\"industry\", \"company\", \"policy\", \"park\", \"project\"])\nbuild_graph(\"industry -> technology -> enterprise -> scenario\")\ngenerate_wiki(mode=\"RAG\", citations=true, incremental_update=true)",
+      "content": [
+        "生成流程采用多源数据接入、实体抽取、关系抽取、语义索引和 RAG 生成。每个结论都保留引用线索，便于从 Wiki 页面回到原始材料。随着政策和项目动态更新，系统会增量刷新相关页面、图谱边和问答索引。"
+      ]
+    },
+    {
+      "id": "sources",
+      "title": "引用来源",
+      "type": "sources",
+      "sources": [
+        { "title": "南沙低空经济政策资料", "kind": "政策文件", "status": "示例来源" },
+        { "title": "南沙重点企业与项目名录", "kind": "企业资料", "status": "示例来源" },
+        { "title": "园区场景与招商项目公告", "kind": "项目公告", "status": "示例来源" }
+      ]
+    }
+  ]
+}
