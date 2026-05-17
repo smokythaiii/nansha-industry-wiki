@@ -1,9 +1,10 @@
-# 南沙产业知识图谱
+<img width="2488" height="1552" alt="image" src="https://github.com/user-attachments/assets/7be1043a-8017-4030-95e6-df7a3dcad63c" /># 南沙产业知识图谱
 
 一个面向黑客松场景的 LLM 产业 Wiki 原型项目。项目聚焦南沙“8+2+3”现代化产业 Wiki，尝试把分散在政策文件、企业资料、园区项目和产业动态中的信息，组织成可搜索、可浏览、可对话的产业知识网络。
 
 # 项目网址
 https://nansha-industry-wiki-iaj7.vercel.app/
+<img width="2548" height="1660" alt="image" src="https://github.com/user-attachments/assets/a9b1dc49-2e4b-4281-a5d3-e2376e672b35" />
 
 ## 项目背景
 
@@ -18,9 +19,14 @@ https://nansha-industry-wiki-iaj7.vercel.app/
 
 - **搜索页**  
   支持搜索产业、企业、政策、项目或技术路线。当前版本基于本地 JSON 数据做前端关键词匹配。
+<img width="2488" height="1552" alt="image" src="https://github.com/user-attachments/assets/2596c2d5-0f03-4cc7-a6db-dc56dc1cdabe" />
+
 
 - **产业 Wiki 详情页**  
   以“低空经济”为样例，展示产业概览、产业链节点、政策支持、代表企业与项目线索、LLM Wiki 生成机制和引用来源。
+
+  <img width="2522" height="1736" alt="image" src="https://github.com/user-attachments/assets/ff60fc35-ed34-45d6-8fcc-725eabc8f240" />
+
 
 - **数据驱动 Wiki**  
   搜索结果和详情页内容从 `data/*.json` 读取，后续可以通过新增数据文件扩展更多产业。
